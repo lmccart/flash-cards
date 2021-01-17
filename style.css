@@ -1,0 +1,87 @@
+body {
+  font-family: 'Bodoni Moda', serif;
+  color: white;
+  margin: 0;
+  width: 80vw;
+  height: calc(100vh - 20vw);
+  overflow: scroll;
+  font-size: 3vw;
+  padding: 10vw;
+}
+
+#main, #easter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cards {
+  width: 100%;
+}
+
+.q, #message {
+  font-size: 3.5em;
+  width: 100%;
+  text-align: left;
+}
+
+.a {
+  font-size: 3.5em;
+  display: none;
+  width: 100%;
+  text-align: left;
+  color: black;
+}
+
+.a.small {
+  font-size: 2.5em;
+}
+.a.smaller {
+  font-size: 1.5em;
+}
+
+.card {
+  display: none;
+}
+
+a {
+  color: #fbfd97;
+}
+
+#easter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: radial-gradient(#2f14fb, #3aedff);
+  padding: 10vw;
+  width: 80vw;
+  height: calc(100vh - 20vw);
+  color: white;
+}
+
+.gradient {
+    background: linear-gradient(135deg, #fac9f4, #ff96d5, #ff0000, #ffb98a, #f4fa9c);
+    background-size: 600% 600%;
+
+    -webkit-animation: GradientAnim 10s ease infinite;
+    -moz-animation: GradientAnim 10s ease infinite;
+    animation: GradientAnim 5s ease infinite;
+}
+
+@-webkit-keyframes GradientAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
