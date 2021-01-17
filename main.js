@@ -11,6 +11,7 @@ fetch('data.txt')
 });
 $('#main').on('click', next);
 $('#easter').on('click', next);
+$('document').on('touchmove', function() { e.preventDefault(); }, { passive:false });
 
 function parseData(data) {
   // const qReg = RegExp(/[0-9]+[.]\s/);
