@@ -56,6 +56,7 @@ function pickRandomCard() {
 }
 
 function showCard(n) {
+  currentCard = n;
   $('.card').hide();
   $('.a').hide();
   $('.q').show();
