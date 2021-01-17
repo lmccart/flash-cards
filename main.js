@@ -1,4 +1,4 @@
-let currentCard;
+let currentCard = 0;
 let cards = [];
 let clicks = 0;
 
@@ -7,7 +7,6 @@ fetch('data.txt')
 .then(data => {
   parseData(data);
   buildCards();
-  pickRandomCard();
 });
 $('#main').on('click', next);
 $('#easter').on('click', next);
@@ -29,6 +28,7 @@ function parseData(data) {
       currentCard.a.push(l.substring(2));
     }
   }
+  currentCard = 0;
 }
 
 function buildCards() {
@@ -56,7 +56,6 @@ function pickRandomCard() {
 }
 
 function showCard(n) {
-  currentCard = n;
   $('.card').hide();
   $('.a').hide();
   $('.q').show();
@@ -65,6 +64,7 @@ function showCard(n) {
 }
 
 function next() {
+  $('#intro').remove();
   $('#easter').hide();
   clicks++;
   if (clicks === 30) { easter('Behnaz for President'); }

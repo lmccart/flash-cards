@@ -20,11 +20,12 @@ body {
   width: 100%;
 }
 
-.q, #message {
+.q, #message, #intro {
   font-size: 3.5em;
   width: 100%;
   text-align: left;
 }
+
 
 .a {
   font-size: 3.5em;
