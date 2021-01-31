@@ -68,8 +68,7 @@ function next() {
   $('#intro').remove();
   $('#easter').hide();
   clicks++;
-  if (clicks === 30) { easter('Liberty and justice for Behnaz'); }
-  else if (clicks === 50) { easter('Joons<br>Not<br>Bombs'); }
+  if (clicks === 50) { easter('Liberty and justice for Behnaz'); }
   else if (clicks === 100) { easter('Behnaz for President'); }
   else if (clicks === 150) { easter('Keep going! You\'re so close to becoming a citizen in a country with universal basic income and healthcare!<br>Oh wait, jk lol.'); }
   
