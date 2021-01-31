@@ -68,10 +68,11 @@ function next() {
   $('#intro').remove();
   $('#easter').hide();
   clicks++;
-  if (clicks === 30) { easter('Behnaz for President'); }
-  else if (clicks === 50) { easter('Keep going! You\'re so close to becoming a citizen in a country with universal basic income and healthcare!<br>Oh wait, jk lol.'); }
-  else if (clicks === 100) { easter('Joons<br>Not<br>Bombs'); }
-  else if (clicks === 150) { easter('Liberty and justice for Behnaz'); }
+  if (clicks === 30) { easter('Liberty and justice for Behnaz'); }
+  else if (clicks === 50) { easter('Joons<br>Not<br>Bombs'); }
+  else if (clicks === 100) { easter('Behnaz for President'); }
+  else if (clicks === 150) { easter('Keep going! You\'re so close to becoming a citizen in a country with universal basic income and healthcare!<br>Oh wait, jk lol.'); }
+  
 
   let card = $('#q'+currentCard);
   if (card.find('.q').is(':visible')) { // show answer
